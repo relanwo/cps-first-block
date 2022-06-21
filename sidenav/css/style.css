@@ -1,0 +1,151 @@
+html {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: 'TT Lakes', sans-serif;
+}
+
+.sidenav-container {
+    width: 272px;
+    margin: 0 auto;    
+}
+
+.sidenav {
+    width: 320px;
+    /* height: 100%; */
+    position: absolute;
+    /* overflow-y: auto; */
+    background-color: #FFFFFF;
+    box-shadow: 
+    16px 0px 52px 0px rgba(14, 24, 80, 0.2),
+    -2px 0px 4px 0px rgba(69, 79, 126, 0.02);
+}
+
+li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+
+
+
+/* HEADER */
+.sidenav-header__ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 0 45px 0;
+    padding: 0;
+}
+
+.sidenav-header__logo {
+    display: block;
+    transform: translateX(-25px);
+}
+.sidenav-header__cross::before {
+    content: url(../icons/cross.png);
+}
+.sidenav-header__search::before {
+    content: url(../icons/search.png);
+}
+
+/* MENU */
+.sidenav-menu__ul {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 45px 0 233px 0;
+}
+
+.sidenav-menu__li {
+    display: block;
+    margin: 0 0 32px 0;
+}
+.sidenav-menu__link:hover {
+    font-size: 1.1em;
+}
+
+.sidenav-menu__link {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+    color: #1B1C21;
+    display: block;
+}
+.sidenav-menu__link.active {
+    color: none;;
+    color: #7E7E82;
+}
+.active::before {
+    position: absolute;
+    top: 112px;
+    left: 0;
+    border-radius: 0 3px 3px 0;
+    content: '';
+    width: 4px;
+    height: 40px;
+    background-color: #41F6D7;
+}
+
+
+
+/* FOOTER */
+.sidenav-footer__ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 0 16px 0;
+    padding: 0;
+    width: 152px;
+}
+
+.sidenav-footer__call::before {
+    content: url(../icons/call.png);
+}
+.sidenav-footer__chat::before {
+    content: url(../icons/chat.png);
+}
+.sidenav-footer__profile::before {
+    content: url(../icons/profile.png);
+}
+
+.email {
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: -0.2px;
+    color: #1B1C21;
+    margin: 0 0 12px 0;
+}
+
+.phone{
+    font-weight: 700;
+    font-size: 24px;
+    letter-spacing: -0.6px;
+    color: #1B1C21;
+    margin: 0 0 40px 0;
+}
+
+.sidenav-lang__ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 0 32px 0;
+    padding: 0;
+    width: 85px;
+}
+
+.sidenav-lang__link {
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: -0.2px;
+    color: #1B1C21;
+    display: block;
+}
