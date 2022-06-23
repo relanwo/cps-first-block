@@ -98,21 +98,6 @@ a {
 	background-color: #41f6d7;
 }
 
-/* .sidenav-menu__link.active {
-	color: none;
-	color: #7e7e82;
-} 
-.active::before {
-	position: absolute;
-	top: 112px;
-	left: 0;
-	border-radius: 0 3px 3px 0;
-	content: "";
-	width: 4px;
-	height: 40px;
-	background-color: #41f6d7;
-} */
-
 /* FOOTER */
 .sidenav-footer__ul {
 	display: flex;
