@@ -16,6 +16,7 @@ body {
 .button {
 	border: none;
 	background: none;
+	cursor: pointer;
 }
 
 /* CONTAINER */
@@ -143,6 +144,12 @@ body {
 		width: 40%;
 		margin: 0 0 0 495px;
 	}
+}
+
+.menu__link,
+.menu__button {
+	cursor: pointer;
+	display: block;
 }
 
 .menu__item {
@@ -310,9 +317,9 @@ body {
 	display: block;
 }
 
-.navigation__item:hover,
-.navigation__item:active,
-.navigation__item:focus {
+.navigation__link:hover,
+.navigation__link:active,
+.navigation__link:focus {
 	outline: 2px solid #b8ffec;
 	border-radius: 6px;
 	background-color: #fff;
