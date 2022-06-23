@@ -1,1 +1,2 @@
-# cps_first_block
+
+kata-cps
