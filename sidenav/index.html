@@ -1,110 +1,124 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scale=0">
-    <link rel="stylesheet" href="css/normalize.css">    
-    <link rel="stylesheet" href="css/fonts.css">
-    <link rel="stylesheet" href="css/style.css">
-    <title>CPS</title>
-</head>
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scale=0"
+		/>
+		<link rel="stylesheet" href="styles/normalize.css" />
+		<link rel="stylesheet" href="styles/fonts.css" />
+		<link rel="stylesheet" href="styles/style.css" />
+		<title>CPS</title>
+	</head>
 
-    <body>
-        <main class="main">
-            <div class="sidenav">
-                <div class="sidenav-container">
+	<body>
+		<main class="main">
+			<div class="sidenav">
+				<div class="sidenav-container">
+					<nav class="sidenav-header">
+						<ul class="sidenav-header__ul">
+							<li class="sidenav-header__item">
+								<a class="sidenav-header__link" href="#">
+									<span
+										class="sidenav-header__span sidenav-header__cross"
+									></span>
+									<!-- <img src="icons/cross.png" alt="logo"> -->
+								</a>
+							</li>
+							<li class="sidenav-header__item">
+								<a class="sidenav-header__link sidenav-header__logo" href="#">
+									<img src="assests/icons/logo.png" alt="logo" />
+								</a>
+							</li>
+							<li class="sidenav-header__item">
+								<a class="sidenav-header__link" href="#">
+									<span
+										class="sidenav-header__span sidenav-header__search"
+									></span>
+									<!-- <img src="icons/search.png" alt="logo"> -->
+								</a>
+							</li>
+						</ul>
+					</nav>
 
-                    <nav class="sidenav-header">
-                        <ul class="sidenav-header__ul">
-                            <li class="sidenav-header__item">
-                                <a class="sidenav-header__link" href="#">
-                                    <span class="sidenav-header__span sidenav-header__cross"></span>
-                                    <!-- <img src="icons/cross.png" alt="logo"> -->
-                                </a>
-                            </li>
-                            <li class="sidenav-header__item">
-                                <a class="sidenav-header__link sidenav-header__logo" href="#">
-                                    <img src="icons/logo.png" alt="logo">
-                                </a>
-                            </li>
-                            <li class="sidenav-header__item">
-                                <a class="sidenav-header__link" href="#">
-                                    <span class="sidenav-header__span sidenav-header__search"></span>
-                                    <!-- <img src="icons/search.png" alt="logo"> -->
-                                </a>
-                            </li>
-                        </ul>
-                    </nav>
-                    
-                    <div class="sidenav-menu">
-                        <ul class="sidenav-menu__ul">
-                            <li class="sidenav-menu__li active">
-                                <a href="#" class="sidenav-menu__link active">Ремонт техники</a>
-                            </li>
-                            <li class="sidenav-menu__li">
-                                <a href="#" class="sidenav-menu__link">Услуги и сервисы</a>
-                            </li>
-                            <li class="sidenav-menu__li">
-                                <a href="#" class="sidenav-menu__link">Корпоративным клиентам</a>
-                            </li>
-                            <li class="sidenav-menu__li">
-                                <a href="#" class="sidenav-menu__link">Продавцам техники</a>
-                            </li>
-                            <li class="sidenav-menu__li">
-                                <a href="#" class="sidenav-menu__link">Партнерам</a>
-                            </li>
-                            <li class="sidenav-menu__li">
-                                <a href="#" class="sidenav-menu__link">Производителям</a>
-                            </li>
-                            <li class="sidenav-menu__li">
-                                <a href="#" class="sidenav-menu__link">Наши сервисные центры</a>
-                            </li>
-                            <li class="sidenav-menu__li">
-                                <a href="#" class="sidenav-menu__link">Контакты</a>
-                            </li>
-                        </ul>
-                    </div>
-    
-                    <div class="sidenav-footer">
-                        <ul class="sidenav-footer__ul">
-                            <li class="sidenav-footer__item">
-                                <a class="sidenav-footer__link" href="#">
-                                    <span class="sidenav-footer__span sidenav-footer__call"></span>
-                                    <!-- <img src="icons/call.png" alt="logo"> -->
-                                </a>
-                            </li>
-                            <li class="sidenav-footer__item">
-                                <a class="sidenav-footer__link" href="#">
-                                    <span class="sidenav-footer__span sidenav-footer__chat"></span>
-                                    <!-- <img src="icons/chat.png" alt="logo"> -->
-                                </a>
-                            </li>
-                            <li class="sidenav-footer__item">
-                                <a class="sidenav-footer__link" href="#">
-                                    <span class="sidenav-footer__span sidenav-footer__profile"></span>
-                                    <!-- <img src="icons/profile.png" alt="logo"> -->
-                                </a>
-                            </li>
-                        </ul>
-    
-                        <div class="email">mail@cps.com</div>
-                        <div class="phone">8 800 890 8900</div>
-    
-                        <ul class="sidenav-lang sidenav-lang__ul">
-                            <li class="sidenav-lang__item">
-                                <a class="sidenav-lang__link" href="#">RU</a>
-                            </li>
-                            <li class="sidenav-lang__item">
-                                <a class="sidenav-lang__link" href="#">EN</a>
-                            </li>
-                            <li class="sidenav-lang__item">
-                                <a class="sidenav-lang__link" href="#">CH</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </main>
-    </body>
+					<div class="sidenav-menu">
+						<ul class="sidenav-menu__ul">
+							<li class="sidenav-menu__li active">
+								<a href="#" class="sidenav-menu__link active">Ремонт техники</a>
+							</li>
+							<li class="sidenav-menu__li">
+								<a href="#" class="sidenav-menu__link">Услуги и сервисы</a>
+							</li>
+							<li class="sidenav-menu__li">
+								<a href="#" class="sidenav-menu__link"
+									>Корпоративным клиентам</a
+								>
+							</li>
+							<li class="sidenav-menu__li">
+								<a href="#" class="sidenav-menu__link">Продавцам техники</a>
+							</li>
+							<li class="sidenav-menu__li">
+								<a href="#" class="sidenav-menu__link">Партнерам</a>
+							</li>
+							<li class="sidenav-menu__li">
+								<a href="#" class="sidenav-menu__link">Производителям</a>
+							</li>
+							<li class="sidenav-menu__li">
+								<a href="#" class="sidenav-menu__link">Наши сервисные центры</a>
+							</li>
+							<li class="sidenav-menu__li">
+								<a href="#" class="sidenav-menu__link">Контакты</a>
+							</li>
+						</ul>
+					</div>
+
+					<div class="sidenav-footer">
+						<ul class="sidenav-footer__ul">
+							<li class="sidenav-footer__item">
+								<a class="sidenav-footer__link" href="#">
+									<span
+										class="sidenav-footer__span sidenav-footer__call"
+									></span>
+									<!-- <img src="icons/call.png" alt="logo"> -->
+								</a>
+							</li>
+							<li class="sidenav-footer__item">
+								<a class="sidenav-footer__link" href="#">
+									<span
+										class="sidenav-footer__span sidenav-footer__chat"
+									></span>
+									<!-- <img src="icons/chat.png" alt="logo"> -->
+								</a>
+							</li>
+							<li class="sidenav-footer__item">
+								<a class="sidenav-footer__link" href="#">
+									<span
+										class="sidenav-footer__span sidenav-footer__profile"
+									></span>
+									<!-- <img src="icons/profile.png" alt="logo"> -->
+								</a>
+							</li>
+						</ul>
+
+						<div class="email">mail@cps.com</div>
+						<div class="phone">8 800 890 8900</div>
+
+						<ul class="sidenav-lang sidenav-lang__ul">
+							<li class="sidenav-lang__item">
+								<a class="sidenav-lang__link" href="#">RU</a>
+							</li>
+							<li class="sidenav-lang__item">
+								<a class="sidenav-lang__link" href="#">EN</a>
+							</li>
+							<li class="sidenav-lang__item">
+								<a class="sidenav-lang__link" href="#">CH</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</main>
+	</body>
 </html>
