@@ -32,6 +32,12 @@ li {
 a {
 	text-decoration: none;
 }
+.button {
+	border: none;
+	background: none;
+	padding: 0;
+	cursor: pointer;
+}
 
 /* HEADER */
 .sidenav-header__ul {
@@ -96,6 +102,11 @@ a {
 	width: 4px;
 	height: 40px;
 	background-color: #41f6d7;
+}
+
+.sidenav-lang__link.sidenav-lang__link--checked {
+	color: none;
+	color: #7e7e82;
 }
 
 /* FOOTER */
