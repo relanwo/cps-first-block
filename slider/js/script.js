@@ -53,11 +53,3 @@ button.addEventListener('click', function () {
   arr.length = 0;
   changeButton(button.innerHTML);
 });
-
-// window.addEventListener('resize', function () {
-//   if (document.documentElement.clientWidth = 1120) {
-//     button.innerHTML = "Показать все"
-//   } else if (document.documentElement.clientWidth = 768) {
-//     button.innerHTML = "Показать все"
-//   }
-// });
