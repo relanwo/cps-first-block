@@ -1,0 +1,163 @@
+html {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+*,
+*:before,
+*:after {
+	box-sizing: inherit;
+}
+
+body {
+	font-family: "TT Lakes", sans-serif;
+	background-color: #f8f8f8;
+	font-size: 16px;
+}
+
+li {
+	list-style: none;
+}
+a {
+	text-decoration: none;
+}
+button {
+	border: none;
+	background: none;
+	padding: 0;
+	cursor: pointer;
+}
+
+.container {
+	margin: 0 auto;
+	width: 90%;
+}
+
+.brands-header__background {
+	background: linear-gradient(90deg, #f8f8f8 1.39%, #ffffff 100%);
+	height: 56px;
+}
+.brands-header {
+	font-style: normal;
+	font-weight: 400;
+	font-size: 1em;
+	letter-spacing: -0.2px;
+	text-transform: uppercase;
+	color: #7e7e82;
+	margin: 0;
+	padding: 20px 0;
+}
+
+.slider {
+	position: relative;
+	padding: 0;
+	display: flex;
+	justify-content: space-between;
+	-ms-overflow-style: none; /* IE и Edge */
+	scrollbar-width: none; /* Firefox */
+	box-sizing: border-box;
+}
+/* Скрываем scrollbar для Chrome, Safari и Opera */
+.slider::-webkit-scrollbar {
+	display: none;
+}
+@media (min-width: 768px) {
+	.slider {
+		overflow: inherit;
+		flex-wrap: wrap;
+	}
+}
+@media (min-width: 1120px) {
+	.slider {
+		overflow: inherit;
+		flex-wrap: wrap;
+	}
+}
+
+.slider__card {
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	background: #ffffff;
+	border: 1px solid #eaeaea;
+	border-radius: 6px;
+	padding: 0 15px;
+	min-width: 240px;
+	height: 72px;
+	margin: 0 1em 0 0;
+	padding: 16px;
+	flex: 1;
+	cursor: pointer;
+}
+@media (min-width: 768px) {
+	.slider__card {
+		flex: 30%;
+		margin: 0 0 1em 0;
+		max-width: 30%;
+		min-width: 224px;
+		width: 100%;
+	}
+	.slider__card--hidden768 {
+		display: none;
+	}
+	.slider__card:last-child {
+		margin: 0 35% 0 0;
+	}
+}
+@media (min-width: 1120px) {
+	.slider__card {
+		max-width: 23%;
+		margin: 0 0 1em 0;
+	}
+	.slider__card--hidden768 {
+		display: flex;
+	}
+	.slider__card--hidden1120 {
+		display: none;
+	}
+	.slider__card:last-child {
+		margin: 0 25.5% 0 0;
+	}
+}
+
+.slider__img {
+	width: min-content;
+	height: min-content;
+}
+
+.slider__navigation-element::after {
+	content: url(../assests/icons/go.png);
+	height: 40px;
+	width: 40px;
+}
+
+.swiper-pagination {
+	position: relative;
+}
+@media (min-width: 768px) {
+	.swiper-pagination {
+		display: none;
+	}
+}
+
+.slider__dropdown {
+	display: none;
+	font-weight: 500;
+	font-size: 1em;
+	letter-spacing: -0.2px;
+	color: #1b1c21;
+}
+.slider__dropdown::before {
+	content: url(../assests/icons/expand.png);
+}
+.slider__dropdown--active::before {
+	content: url(../assests/icons/expand.png);
+	transform: rotate(180deg);
+}
+@media (min-width: 768px) {
+	.slider__dropdown {
+		display: flex;
+	}
+}

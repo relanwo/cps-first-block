@@ -21,22 +21,19 @@ body {
 
 /* CONTAINER */
 .container {
-	max-width: 288px;
-	width: 100%;
 	margin: 0 auto;
+	width: 90%;
 }
 
 @media (min-width: 768px) {
 	.container {
-		max-width: none;
-		max-width: 720px;
+		/* max-width: none; */
 	}
 }
 
 @media (min-width: 1120px) {
 	.container {
-		max-width: none;
-		max-width: 1060px;
+		/* max-width: none; */
 	}
 }
 
@@ -82,7 +79,8 @@ body {
 }
 
 .menu__div--width-1 {
-	width: 60%;
+	width: 40%;
+	max-width: 190px;
 }
 
 .menu__div--width-1::after {
@@ -96,6 +94,10 @@ body {
 .menu__button {
 	cursor: pointer;
 	display: block;
+}
+
+.menu__div--width-3 {
+	max-width: 120px;
 }
 
 @media (min-width: 768px) {
@@ -118,6 +120,7 @@ body {
 
 	.menu__div--width-2 {
 		width: 21%;
+		max-width: 160px;
 		margin: 0 0 0 220px;
 	}
 
@@ -141,8 +144,9 @@ body {
 	}
 
 	.menu__div--width-3 {
-		width: 40%;
-		margin: 0 0 0 495px;
+		max-width: none;
+		width: 355px;
+		margin: 0 0 0 410px;
 	}
 }
 
@@ -156,9 +160,14 @@ body {
 	list-style-type: none;
 	display: flex;
 	justify-content: space-between;
+	/* display: block; */
 }
 
 .menu__div--hidden {
+	display: none;
+}
+
+.menu__link-description {
 	display: none;
 }
 
@@ -194,8 +203,16 @@ body {
 		left: -15px;
 	}
 
-	.menu__link--labeled--request::before,
-	.menu__link--labeled--status::before {
+	/* .menu__link--labeled--request::before,
+	.menu__link--labeled--status::before { */
+
+	.menu__link--labeled,
+	.menu__link--labeled {
+		width: 100px;
+	}
+
+	.menu__link-description {
+		display: inline;
 		font-family: "TT Lakes";
 		font-weight: 500;
 		font-size: 16px;
@@ -205,16 +222,29 @@ body {
 		position: relative;
 		position: relative;
 		top: -25%;
-		left: -5%;
+		/* left: -5%; */
 	}
 
-	.menu__link--labeled--request::before {
+	.menu__img {
+		margin: 0 0 0 5px;
+	}
+
+	/* .menu__link--labeled--request::before {
 		content: "Оставить заявку";
 	}
 
 	.menu__link--labeled--status::before {
 		content: "Статус ремонта";
-	}
+	} */
+
+	/* .menu__link--labeled--request,
+	.menu__link--labeled--status {
+		width: 170px;
+	} */
+
+	/* .menu__item--labeled {
+		display: block;
+	} */
 }
 
 /* SERVICES */
@@ -298,6 +328,7 @@ body {
 }
 
 .navigation__link {
+	user-select: none;
 	cursor: pointer;
 	display: block;
 	font-family: "TT Lakes";
@@ -320,7 +351,7 @@ body {
 .navigation__link:hover,
 .navigation__link:active,
 .navigation__link:focus {
-	outline: 2px solid #b8ffec;
+	outline: 1px solid #b8ffec;
 	border-radius: 6px;
 	background-color: #fff;
 }
