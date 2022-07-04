@@ -17,9 +17,6 @@ new Swiper('.swiper-container', {
 // раскрытие/закрытие slider при разных разрешениях
 var button = document.querySelector(".slider__dropdown");
 var cards = document.getElementsByClassName("slider__card");
-// c массивом arr работает как функция resize, так и с анонимная функция внутри eventlistener,
-// поэтому она не const 
-let arr = [];
 
 var changeButton = function () {
   if (button.innerHTML === "Показать все") {
@@ -31,9 +28,13 @@ var changeButton = function () {
   button.classList.toggle('slider__dropdown--active');
 };
 
+let arr = [];
+let param;
+let selector; 
+  
 let resize = function () {
-  let param = 6;
-  let selector = 'slider__card--hidden768'; 
+  param = 6;
+  selector = 'slider__card--hidden768'; 
 
   if (window.matchMedia('(min-width: 1120px)').matches) {
     selector = 'slider__card--hidden1120';
