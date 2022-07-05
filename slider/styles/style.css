@@ -128,7 +128,7 @@ button {
 }
 
 .slider__navigation-element::after {
-	content: url(../assests/icons/go.png);
+	content: url(../assets/icons/go.png);
 	height: 40px;
 	width: 40px;
 }
@@ -150,10 +150,10 @@ button {
 	color: #1b1c21;
 }
 .slider__dropdown::before {
-	content: url(../assests/icons/expand.png);
+	content: url(../assets/icons/expand.png);
 }
 .slider__dropdown--active::before {
-	content: url(../assests/icons/expand.png);
+	content: url(../assets/icons/expand.png);
 	transform: rotate(180deg);
 }
 @media (min-width: 768px) {

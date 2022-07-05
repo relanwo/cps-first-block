@@ -371,6 +371,10 @@ body {
 }
 
 /* P */
+.services-text__container {
+	margin: 0 30px 0 0;
+}
+
 .services-text__paragraph {
 	font-family: "TT Lakes";
 	font-weight: 400;
@@ -381,6 +385,11 @@ body {
 	margin: 0;
 }
 
+.services-text__paragraph::after {
+	content: "";
+	display: block;
+}
+
 .services-text__paragraph_hidden,
 .services-text__paragraph_768hidden {
 	display: none;
@@ -389,23 +398,39 @@ body {
 @media (min-width: 768px) {
 	.services-text__paragraph {
 		line-height: 20px;
-		width: 310px;
+		/* width: 310px; */
+		min-width: 312px;
 	}
 
 	.services-text__paragraph_hidden {
 		display: inline;
+		line-height: 20px;
+		/* width: 310px; */
+		min-width: 312px;
 	}
 }
 
 @media (min-width: 1120px) {
 	.services-text__paragraph {
 		line-height: 20px;
-		width: 490px;
+		min-width: 490px;
 	}
 
 	.services-text__paragraph_hidden,
 	.services-text__paragraph_768hidden {
 		display: inline;
+		line-height: 20px;
+		min-width: 490px;
+	}
+}
+
+/* .services-img__container {} */
+@media (min-width: 768px) {
+	.services-img__container {
+		width: 50%;
+	}
+	.services-text__container {
+		width: 50%;
 	}
 }
 
@@ -426,7 +451,7 @@ body {
 }
 
 .services-text__img-container::before {
-	content: url(../assests/img/icons/expand.png);
+	content: url(../assets/img/icons/expand.png);
 }
 
 /* IMG */

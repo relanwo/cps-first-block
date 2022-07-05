@@ -53,10 +53,10 @@ a {
 	transform: translateX(-25px);
 }
 .sidenav-header__cross::before {
-	content: url(../assests/icons/cross.png);
+	content: url(../assets/icons/cross.png);
 }
 .sidenav-header__search::before {
-	content: url(../assests/icons/search.png);
+	content: url(../assets/icons/search.png);
 }
 
 /* MENU */
@@ -120,13 +120,13 @@ a {
 }
 
 .sidenav-footer__call::before {
-	content: url(../assests/icons/call.png);
+	content: url(../assets/icons/call.png);
 }
 .sidenav-footer__chat::before {
-	content: url(../assests/icons/chat.png);
+	content: url(../assets/icons/chat.png);
 }
 .sidenav-footer__profile::before {
-	content: url(../assests/icons/profile.png);
+	content: url(../assets/icons/profile.png);
 }
 
 .email {
