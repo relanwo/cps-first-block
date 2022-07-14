@@ -28,13 +28,11 @@ var changeButton = function () {
   button.classList.toggle('slider__dropdown--active');
 };
 
-let arr = [];
-let param;
-let selector; 
   
 let resize = function () {
-  param = 6;
-  selector = 'slider__card--hidden768'; 
+  let param = 6;
+  let selector = 'slider__card--hidden768'; 
+  let arr = [];
 
   if (window.matchMedia('(min-width: 1120px)').matches) {
     selector = 'slider__card--hidden1120';
@@ -46,7 +44,7 @@ let resize = function () {
 };
 
 button.addEventListener('click', function () {
-  resize();
+  let arr = resize();
   for (var i = arr[0]; i < cards.length; i++) {
     cards[i].classList.toggle(arr[1]);
   }
